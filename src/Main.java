@@ -25,10 +25,17 @@ public class Main {
         short year = 2023;
         if (year % 4 == 0) {
             if (year % 100 == 0) {
-                if (year % 400 == 0) {System.out.println(year + " год является високосным");}
-                else {System.out.println(year + " год НЕ является високосным");}}
-            else {System.out.println(year + " год является високосным");}}
-        else {System.out.println(year + " год НЕ является високосным");}
+                if (year % 400 == 0) {
+                    System.out.println(year + " год является високосным");
+                } else {
+                    System.out.println(year + " год НЕ является високосным");
+                }
+            } else {
+                System.out.println(year + " год является високосным");
+            }
+        } else {
+            System.out.println(year + " год НЕ является високосным");
+        }
         System.out.println("Задача №4");
         //task4
         short distance = 165;
@@ -45,16 +52,16 @@ public class Main {
         //task5
         byte monthNumber = 13;
         switch (monthNumber) {
-            case 12,1,2:
+            case 12, 1, 2:
                 System.out.println("Зима");
                 break;
-            case 3,4,5:
+            case 3, 4, 5:
                 System.out.println("Весна");
                 break;
-            case 6,7,8:
+            case 6, 7, 8:
                 System.out.println("Лето");
                 break;
-            case 9,10,11:
+            case 9, 10, 11:
                 System.out.println("Осень");
                 break;
             default:
